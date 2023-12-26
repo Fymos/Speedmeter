@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container mt-5 pb-5">
+      <h1 class="text-center pt-5">Who is faster?</h1>
+      <form style="width: 350px;" class="form m-auto mt-5 d-flex align-items-center justify-content-between" action="">
+        <span class="me-3">Distance:</span>
+        <input class="inp form-control" type="number" name="km" id="inp" placeholder="100km"/>
+        <button class="btn btn-primary ms-3">run</button>
+      </form>
+    </div>
+    <div class="container text-center mt-2">
+      <div class="row">
+        <div class="col">
+          <div class="card border border-3 border-primary" style="width: 18rem">
+            <img class="icon card-img-top" src="img/person-walking.svg" alt="">
+            <div class="card-body">
+              <h1 class="card-title fs-3">
+                On Foot
+              </h1>
+              <p id="personSpeed" class="card-text fs-5 text-primary">
+                X o'clock
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border border-3 border-primary" style="width: 18rem">
+            <img class="icon card-img-top" src="img/bicycle.svg" alt="">
+            <div class="card-body">
+              <h1 class="card-title fs-3">
+                By Bike
+              </h1>
+              <p id="bikeSpeed" class="card-text fs-5 text-primary">
+                X o'clock
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border border-3 border-primary" style="width: 18rem">
+            <img class="icon card-img-top" src="img/car-front.svg" alt="">
+            <div class="card-body">
+              <h1 class="card-title fs-3">
+                By Сar
+              </h1>
+              <p id="carSpeed" class="card-text fs-5 text-primary">
+                X o'clock
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border border-3 border-primary" style="width: 18rem">
+            <img class="icon card-img-top" src="img/airplane.svg" alt="">
+            <div class="card-body">
+              <h1 class="card-title fs-3">
+                By Plane
+              </h1>
+              <p id="airplaneSpeed" class="card-text fs-5 text-primary">
+                X o'clock
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
