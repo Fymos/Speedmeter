@@ -1,11 +1,7 @@
-var elForm = document.querySelector(".form")
-var persSpeed = document.querySelector("#personSpeed")
-var bikeSpeed = document.querySelector("#bikeSpeed")
-var carSpeed = document.querySelector("#carSpeed")
-var airSpeed = document.querySelector("#airplaneSpeed")
-var elInp = document.querySelector(".inp")
-
-
-elForm.addEventListener('submit', function(e) {
-  e.preventDefault()
-})
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  personSpeed.textContent = e.target.km.value / 5
+  bikeSpeed.textContent = e.target.km.value / 20
+  carSpeed.textContent = e.target.km.value / 100
+  airplaneSpeed.textContent = e.target.km.value / 800
+});
